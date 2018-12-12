@@ -185,10 +185,10 @@
 	var legend = L.control({position: 'bottomright'});
 	legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
-			grades = [0.830521335344763, 0.6721470629996827, 0.4684443190037165, 0.2851054950620385, 0,],
+			grades = [0.830521335344763, 0.6721470629996827, 0.4684443190037165, 0.2851054950620385, 0,-1],
 			labels = [],
 			from, to;
-    var letter_grades = ["A","B","C","D","F"]
+    var letter_grades = ["A","B","C","D","F","N/A"]
 		for (var i = 0; i < grades.length; i++) {
 			from = grades[i];
 			labels.push(
